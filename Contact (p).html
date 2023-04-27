@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>My Website</title>
+  <style>
+    .contain{
+      background-image: url("images/bgn.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 90px;
+    width: 1300px;
+    height: 500px;
+    }
+    .log{
+      width:300px;
+      height:500px;
+      object-fit:contain;
+      position:absolute;
+      left:500px;
+    }
+    </style>
+</head>
+<!-- Header -->
+<body>
+<section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          
+            <img class="logo" src="images\poyv-low-resolution-logo-white-on-black-background.png">
+          
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="index.html" data-after="Home">Home</a></li>
+            <li><a href="AboutUs.html" data-after="About">About</a></li>
+            <li><a href="Services.html" data-after="Service">Services</a></li>
+            <li><a href="Bussiness.html" data-after="Bussiness">Bussiness</a></li>
+            <li><a href="Contact (p).html" data-after="Contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="contain">
+    <img class="log" src="images\poyv-low-resolution-logo-white-on-black-background.png">
+          
+  </div>
+  <script>
+
+		window.onload = function() {
+			if (localStorage.getItem("loggedIn") === null) {
+				alert("Please sign up / sign in first");
+				window.location.href = "newsignup.html";
+			}
+		}
+	   
+  </script>
+</body>
+</html>
